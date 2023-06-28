@@ -3,11 +3,11 @@ BEGIN
 set n1, n2, sum 
 read n1, n2
 sum = n1+n2
-print sum 
+print ("Total: ", sum)
 END
 // Exercise 2: Check if a Number is Even or Odd
 BEGIN 
-set n1
+Input n1
 if n1%2 == 0 
   print "even"
 else 
@@ -21,16 +21,35 @@ b) Calculate the average of the five numbers.
 c) Find the smallest (minimum) and largest (maximum) of the five entered numbers.
 d) Write out the results found from steps b and c with a message describing what they are
 
-Begin
-Number n1, n2, n3, n4, n5
+a) 
+BEGIN
 Input n1, n2, n3, n4, n5
-Avg =(n1+n2+n3+n4+n5)/5
-min = 
+b) Avg =(n1+n2+n3+n4+n5)/5
+c)
+min = n1
+max = n1
+#creating conditions for min number
+if n2 < min:
+    min = n2
+if n3 < min:
+    min = n3
+if n4 < min:
+    min = n4
+if n5 < min:
+    min = n5
+#creating conditions for max number
+if n2 > max:
+    max = n2
+if n3 > max:
+    max = n3
+if n4 > max:
+    max = n4
+if n5 > max:
+    max = n5
 
-print avg
-print smallest
-print largest
-
-(Your pseudocode here)
+# Printing the results
+print("Average: ", avg)
+print("Minimum: ", min)
+print("Maximum: ", max)
 
 -- END --
